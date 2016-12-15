@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F45F3BC81E02DFA50009434E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F3BC71E02DFA50009434E /* AppDelegate.m */; };
+		F45F3BCB1E02DFA50009434E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F3BCA1E02DFA50009434E /* main.m */; };
+		F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCC1E02DFA50009434E /* Assets.xcassets */; };
+		F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCE1E02DFA50009434E /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F45F3BC31E02DFA50009434E /* TestSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45F3BC61E02DFA50009434E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F45F3BC71E02DFA50009434E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F45F3BCA1E02DFA50009434E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F45F3BCC1E02DFA50009434E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F45F3BCF1E02DFA50009434E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F45F3BD11E02DFA50009434E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F45F3BC01E02DFA50009434E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45F3BBA1E02DFA50009434E = {
+			isa = PBXGroup;
+			children = (
+				F45F3BC51E02DFA50009434E /* TestSounds */,
+				F45F3BC41E02DFA50009434E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45F3BC41E02DFA50009434E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F45F3BC31E02DFA50009434E /* TestSounds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45F3BC51E02DFA50009434E /* TestSounds */ = {
+			isa = PBXGroup;
+			children = (
+				F45F3BC61E02DFA50009434E /* AppDelegate.h */,
+				F45F3BC71E02DFA50009434E /* AppDelegate.m */,
+				F45F3BCC1E02DFA50009434E /* Assets.xcassets */,
+				F45F3BCE1E02DFA50009434E /* MainMenu.xib */,
+				F45F3BD11E02DFA50009434E /* Info.plist */,
+				F45F3BC91E02DFA50009434E /* Supporting Files */,
+			);
+			path = TestSounds;
+			sourceTree = "<group>";
+		};
+		F45F3BC91E02DFA50009434E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F45F3BCA1E02DFA50009434E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F45F3BC21E02DFA50009434E /* TestSounds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45F3BD41E02DFA50009434E /* Build configuration list for PBXNativeTarget "TestSounds" */;
+			buildPhases = (
+				F45F3BBF1E02DFA50009434E /* Sources */,
+				F45F3BC01E02DFA50009434E /* Frameworks */,
+				F45F3BC11E02DFA50009434E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestSounds;
+			productName = TestSounds;
+			productReference = F45F3BC31E02DFA50009434E /* TestSounds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45F3BBB1E02DFA50009434E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Hori,Masaki";
+				TargetAttributes = {
+					F45F3BC21E02DFA50009434E = {
+						CreatedOnToolsVersion = 8.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "TestSounds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45F3BBA1E02DFA50009434E;
+			productRefGroup = F45F3BC41E02DFA50009434E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F45F3BC21E02DFA50009434E /* TestSounds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F45F3BC11E02DFA50009434E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */,
+				F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F45F3BBF1E02DFA50009434E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45F3BCB1E02DFA50009434E /* main.m in Sources */,
+				F45F3BC81E02DFA50009434E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F45F3BCE1E02DFA50009434E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45F3BCF1E02DFA50009434E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45F3BD21E02DFA50009434E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F45F3BD31E02DFA50009434E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F45F3BD51E02DFA50009434E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestSounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.TestSounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F45F3BD61E02DFA50009434E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TestSounds/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.TestSounds;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "TestSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45F3BD21E02DFA50009434E /* Debug */,
+				F45F3BD31E02DFA50009434E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45F3BD41E02DFA50009434E /* Build configuration list for PBXNativeTarget "TestSounds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45F3BD51E02DFA50009434E /* Debug */,
+				F45F3BD61E02DFA50009434E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F45F3BBB1E02DFA50009434E /* Project object */;
+}
