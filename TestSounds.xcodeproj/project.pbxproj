@@ -11,6 +11,23 @@
 		F45F3BCB1E02DFA50009434E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F3BCA1E02DFA50009434E /* main.m */; };
 		F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCC1E02DFA50009434E /* Assets.xcassets */; };
 		F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCE1E02DFA50009434E /* MainMenu.xib */; };
+		F45F3BD91E02DFF40009434E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45F3BD81E02DFF40009434E /* AudioToolbox.framework */; };
+		F48E7CA91ECB4E6700025B61 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CA71ECB4E6700025B61 /* WindowController.m */; };
+		F48E7CAA1ECB4E6700025B61 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CA81ECB4E6700025B61 /* WindowController.xib */; };
+		F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48E7CAB1ECB57DD00025B61 /* WebKit.framework */; };
+		F48E7CCF1ED0036F00025B61 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC11ED0036F00025B61 /* decode.c */; };
+		F48E7CD01ED0036F00025B61 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC41ED0036F00025B61 /* input.c */; };
+		F48E7CD11ED0036F00025B61 /* itab.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC61ED0036F00025B61 /* itab.c */; };
+		F48E7CD21ED0036F00025B61 /* syn-att.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC81ED0036F00025B61 /* syn-att.c */; };
+		F48E7CD31ED0036F00025B61 /* syn-intel.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC91ED0036F00025B61 /* syn-intel.c */; };
+		F48E7CD41ED0036F00025B61 /* syn.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCA1ED0036F00025B61 /* syn.c */; };
+		F48E7CD51ED0036F00025B61 /* udis86.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCE1ED0036F00025B61 /* udis86.c */; };
+		F48E7CDC1ED0037C00025B61 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CD61ED0037C00025B61 /* mach_override.c */; };
+		F48E7CDD1ED0037C00025B61 /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CD81ED0037C00025B61 /* Rakefile */; };
+		F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */; };
+		F48E7CF21ED1471D00025B61 /* getPage.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEC1ED1471D00025B61 /* getPage.c */; };
+		F48E7CF31ED1471D00025B61 /* SymbolSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */; };
+		F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +38,39 @@
 		F45F3BCC1E02DFA50009434E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45F3BCF1E02DFA50009434E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F45F3BD11E02DFA50009434E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45F3BD81E02DFF40009434E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F48E7CA61ECB4E6700025B61 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
+		F48E7CA71ECB4E6700025B61 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
+		F48E7CA81ECB4E6700025B61 /* WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
+		F48E7CAB1ECB57DD00025B61 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F48E7CC11ED0036F00025B61 /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		F48E7CC21ED0036F00025B61 /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		F48E7CC31ED0036F00025B61 /* extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extern.h; sourceTree = "<group>"; };
+		F48E7CC41ED0036F00025B61 /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		F48E7CC51ED0036F00025B61 /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		F48E7CC61ED0036F00025B61 /* itab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = itab.c; sourceTree = "<group>"; };
+		F48E7CC71ED0036F00025B61 /* itab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itab.h; sourceTree = "<group>"; };
+		F48E7CC81ED0036F00025B61 /* syn-att.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "syn-att.c"; sourceTree = "<group>"; };
+		F48E7CC91ED0036F00025B61 /* syn-intel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "syn-intel.c"; sourceTree = "<group>"; };
+		F48E7CCA1ED0036F00025B61 /* syn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syn.c; sourceTree = "<group>"; };
+		F48E7CCB1ED0036F00025B61 /* syn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syn.h; sourceTree = "<group>"; };
+		F48E7CCC1ED0036F00025B61 /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		F48E7CCD1ED0036F00025B61 /* udint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udint.h; sourceTree = "<group>"; };
+		F48E7CCE1ED0036F00025B61 /* udis86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udis86.c; sourceTree = "<group>"; };
+		F48E7CD61ED0037C00025B61 /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_override.c; sourceTree = "<group>"; };
+		F48E7CD71ED0037C00025B61 /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_override.h; sourceTree = "<group>"; };
+		F48E7CD81ED0037C00025B61 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		F48E7CD91ED0037C00025B61 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		F48E7CDA1ED0037C00025B61 /* test_mach_override.cp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = test_mach_override.cp; sourceTree = "<group>"; };
+		F48E7CDB1ED0037C00025B61 /* udis86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udis86.h; sourceTree = "<group>"; };
+		F48E7CE01ED0038A00025B61 /* HTSymbolHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSymbolHook.h; sourceTree = "<group>"; };
+		F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSymbolHook.m; sourceTree = "<group>"; };
+		F48E7CEC1ED1471D00025B61 /* getPage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getPage.c; sourceTree = "<group>"; };
+		F48E7CED1ED1471D00025B61 /* getPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPage.h; sourceTree = "<group>"; };
+		F48E7CEE1ED1471D00025B61 /* SymbolSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolSearch.h; sourceTree = "<group>"; };
+		F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolSearch.m; sourceTree = "<group>"; };
+		F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewExt.h; sourceTree = "<group>"; };
+		F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewExt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */,
+				F45F3BD91E02DFF40009434E /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +89,11 @@
 		F45F3BBA1E02DFA50009434E = {
 			isa = PBXGroup;
 			children = (
-				F45F3BC51E02DFA50009434E /* TestSounds */,
+				F48E7CE61ED12A9A00025B61 /* WKWebView_MuteExt */,
+				F48E7CBE1ED0033700025B61 /* HTSymbolHook */,
+				F45F3BC51E02DFA50009434E /* Test */,
 				F45F3BC41E02DFA50009434E /* Products */,
+				F45F3BD71E02DFF40009434E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,16 +105,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F45F3BC51E02DFA50009434E /* TestSounds */ = {
+		F45F3BC51E02DFA50009434E /* Test */ = {
 			isa = PBXGroup;
 			children = (
 				F45F3BC61E02DFA50009434E /* AppDelegate.h */,
 				F45F3BC71E02DFA50009434E /* AppDelegate.m */,
+				F48E7CA61ECB4E6700025B61 /* WindowController.h */,
+				F48E7CA71ECB4E6700025B61 /* WindowController.m */,
+				F48E7CA81ECB4E6700025B61 /* WindowController.xib */,
 				F45F3BCC1E02DFA50009434E /* Assets.xcassets */,
 				F45F3BCE1E02DFA50009434E /* MainMenu.xib */,
 				F45F3BD11E02DFA50009434E /* Info.plist */,
 				F45F3BC91E02DFA50009434E /* Supporting Files */,
 			);
+			name = Test;
 			path = TestSounds;
 			sourceTree = "<group>";
 		};
@@ -69,6 +128,76 @@
 				F45F3BCA1E02DFA50009434E /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F45F3BD71E02DFF40009434E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F48E7CAB1ECB57DD00025B61 /* WebKit.framework */,
+				F45F3BD81E02DFF40009434E /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F48E7CBE1ED0033700025B61 /* HTSymbolHook */ = {
+			isa = PBXGroup;
+			children = (
+				F48E7CE01ED0038A00025B61 /* HTSymbolHook.h */,
+				F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */,
+				F48E7CBF1ED0034500025B61 /* mach_override */,
+			);
+			name = HTSymbolHook;
+			path = HTSymbolHook/HTSymbolHook;
+			sourceTree = "<group>";
+		};
+		F48E7CBF1ED0034500025B61 /* mach_override */ = {
+			isa = PBXGroup;
+			children = (
+				F48E7CD61ED0037C00025B61 /* mach_override.c */,
+				F48E7CD71ED0037C00025B61 /* mach_override.h */,
+				F48E7CD81ED0037C00025B61 /* Rakefile */,
+				F48E7CD91ED0037C00025B61 /* README.markdown */,
+				F48E7CDA1ED0037C00025B61 /* test_mach_override.cp */,
+				F48E7CDB1ED0037C00025B61 /* udis86.h */,
+				F48E7CC01ED0035C00025B61 /* libusdis86 */,
+			);
+			path = mach_override;
+			sourceTree = "<group>";
+		};
+		F48E7CC01ED0035C00025B61 /* libusdis86 */ = {
+			isa = PBXGroup;
+			children = (
+				F48E7CC11ED0036F00025B61 /* decode.c */,
+				F48E7CC21ED0036F00025B61 /* decode.h */,
+				F48E7CC31ED0036F00025B61 /* extern.h */,
+				F48E7CC41ED0036F00025B61 /* input.c */,
+				F48E7CC51ED0036F00025B61 /* input.h */,
+				F48E7CC61ED0036F00025B61 /* itab.c */,
+				F48E7CC71ED0036F00025B61 /* itab.h */,
+				F48E7CC81ED0036F00025B61 /* syn-att.c */,
+				F48E7CC91ED0036F00025B61 /* syn-intel.c */,
+				F48E7CCA1ED0036F00025B61 /* syn.c */,
+				F48E7CCB1ED0036F00025B61 /* syn.h */,
+				F48E7CCC1ED0036F00025B61 /* types.h */,
+				F48E7CCD1ED0036F00025B61 /* udint.h */,
+				F48E7CCE1ED0036F00025B61 /* udis86.c */,
+			);
+			name = libusdis86;
+			path = libudis86;
+			sourceTree = "<group>";
+		};
+		F48E7CE61ED12A9A00025B61 /* WKWebView_MuteExt */ = {
+			isa = PBXGroup;
+			children = (
+				F48E7CEC1ED1471D00025B61 /* getPage.c */,
+				F48E7CED1ED1471D00025B61 /* getPage.h */,
+				F48E7CEE1ED1471D00025B61 /* SymbolSearch.h */,
+				F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */,
+				F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */,
+				F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */,
+			);
+			name = WKWebView_MuteExt;
+			path = WKWebKit_MuteExt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48E7CDD1ED0037C00025B61 /* Rakefile in Resources */,
+				F48E7CAA1ECB4E6700025B61 /* WindowController.xib in Resources */,
 				F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */,
 				F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */,
 			);
@@ -141,7 +272,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48E7CD41ED0036F00025B61 /* syn.c in Sources */,
+				F48E7CD51ED0036F00025B61 /* udis86.c in Sources */,
+				F48E7CDC1ED0037C00025B61 /* mach_override.c in Sources */,
+				F48E7CD01ED0036F00025B61 /* input.c in Sources */,
+				F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */,
+				F48E7CF21ED1471D00025B61 /* getPage.c in Sources */,
+				F48E7CD21ED0036F00025B61 /* syn-att.c in Sources */,
+				F48E7CF31ED1471D00025B61 /* SymbolSearch.m in Sources */,
 				F45F3BCB1E02DFA50009434E /* main.m in Sources */,
+				F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */,
+				F48E7CCF1ED0036F00025B61 /* decode.c in Sources */,
+				F48E7CA91ECB4E6700025B61 /* WindowController.m in Sources */,
+				F48E7CD11ED0036F00025B61 /* itab.c in Sources */,
+				F48E7CD31ED0036F00025B61 /* syn-intel.c in Sources */,
 				F45F3BC81E02DFA50009434E /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +434,7 @@
 				F45F3BD61E02DFA50009434E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

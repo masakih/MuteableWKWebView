@@ -1,0 +1,3 @@
+[submodule "HTSymbolHook"]
+	path = HTSymbolHook
+	url = https://github.com/hetima/HTSymbolHook.git

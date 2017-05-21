@@ -8,21 +8,30 @@
 
 #import "AppDelegate.h"
 
+#import "WindowController.h"
+
+
 @interface AppDelegate ()
 
-@property (weak) IBOutlet NSWindow *window;
+@property NSMutableArray<WindowController *> *controllers;
+
 @end
 
 @implementation AppDelegate
 
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+- (void)applicationWillFinishLaunching:(NSNotification *)notification
+{
+    self.controllers = [NSMutableArray array];
+    
+    [self newWindow:nil];
 }
 
-
-- (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+- (IBAction)newWindow:(id)sender
+{
+    WindowController *wc = [[WindowController alloc] initWithURLString:@"https://www.youtube.com"];
+    [self.controllers addObject:wc];
+    
+    [wc showWindow:nil];
 }
-
 
 @end
