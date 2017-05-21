@@ -189,8 +189,8 @@
 		F48E7CE61ED12A9A00025B61 /* WKWebView_MuteExt */ = {
 			isa = PBXGroup;
 			children = (
-				F48E7CEC1ED1471D00025B61 /* getPage.c */,
 				F48E7CED1ED1471D00025B61 /* getPage.h */,
+				F48E7CEC1ED1471D00025B61 /* getPage.c */,
 				F48E7CEE1ED1471D00025B61 /* SymbolSearch.h */,
 				F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */,
 				F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */,
