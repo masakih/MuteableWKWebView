@@ -12,9 +12,12 @@
 
 NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
     
+    NSDictionary<NSString *, NSString *> *env = @{@"LANG": @"C"};
+    
     NSTask *nmTask = [NSTask new];
     nmTask.launchPath = @"/usr/bin/nm";
     nmTask.arguments = @[imagePath];
+    nmTask.environment = env;
     
     NSPipe *nmPipe = [NSPipe pipe];
     nmTask.standardOutput = nmPipe;
@@ -28,6 +31,7 @@ NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
         [taskStack addObject:grepTask];
         grepTask.launchPath = @"/usr/bin/grep";
         grepTask.arguments = @[hint];
+        grepTask.environment = env;
         
         grepTask.standardInput = pipe;
         pipe = [NSPipe pipe];
