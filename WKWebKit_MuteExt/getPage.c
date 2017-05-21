@@ -16,12 +16,21 @@
 #error This file must be compiled without ARC
 #endif
 
-void *getPage(id instance) {
+const char *pagePropertyName = "_page";
+const char *WKWebViewClassName = "WKWebView";
+
+static bool checkPageProperty() {
     
-    static const char *pagePropertyName = "_page";
     static bool foundPageProperty = false;
+    if( foundPageProperty ) return true;
     
-    Class classObj = object_getClass(instance);
+    static bool isFirst = true;
+    if( !isFirst ) return false;
+    isFirst = false;
+    
+    Class classObj = objc_getClass(WKWebViewClassName);
+    if( classObj == Nil ) return false;
+    
     unsigned int c = 0;
     Ivar *ivarP = class_copyIvarList(classObj, &c);
     
@@ -34,10 +43,17 @@ void *getPage(id instance) {
             }
         }
     }
-    if( !foundPageProperty ) {
+    
+    return foundPageProperty;
+}
+
+void *getPage(id instance) {
+    
+    if( !checkPageProperty() ) {
         return NULL;
     }
     
+    Class classObj = objc_getClass(WKWebViewClassName);
     Ivar ivar = class_getInstanceVariable(classObj, pagePropertyName);
     void *ptr = object_getIvar(instance, ivar);
     
