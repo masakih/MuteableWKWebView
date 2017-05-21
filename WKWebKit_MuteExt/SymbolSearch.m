@@ -20,10 +20,12 @@ NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
     nmTask.standardOutput = nmPipe;
     [nmTask launch];
     
+    NSMutableArray<NSTask *> *taskStack = [NSMutableArray array];
     NSPipe *pipe = nmPipe;
     NSTask *lastTask = nil;
     for( NSString *hint in hints ) {
         NSTask *grepTask = [NSTask new];
+        [taskStack addObject:grepTask];
         grepTask.launchPath = @"/usr/bin/grep";
         grepTask.arguments = @[hint];
         
