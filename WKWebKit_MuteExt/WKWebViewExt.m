@@ -44,6 +44,7 @@ SetMuteFunc getSetMuteFunc() {
     isFirst = NO;
     
     NSString *symName = symbolName();
+    if( !symName ) return NULL;
     
     HTSymbolHook *hook = [HTSymbolHook symbolHookWithImageNameSuffix:@"/WebKit"];
     sMuteFunc = (SetMuteFunc)[hook symbolPtrWithSymbolName:symName];
