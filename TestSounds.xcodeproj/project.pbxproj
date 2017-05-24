@@ -11,7 +11,6 @@
 		F45F3BCB1E02DFA50009434E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F3BCA1E02DFA50009434E /* main.m */; };
 		F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCC1E02DFA50009434E /* Assets.xcassets */; };
 		F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCE1E02DFA50009434E /* MainMenu.xib */; };
-		F45F3BD91E02DFF40009434E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F45F3BD81E02DFF40009434E /* AudioToolbox.framework */; };
 		F48E7CA91ECB4E6700025B61 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CA71ECB4E6700025B61 /* WindowController.m */; };
 		F48E7CAA1ECB4E6700025B61 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CA81ECB4E6700025B61 /* WindowController.xib */; };
 		F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48E7CAB1ECB57DD00025B61 /* WebKit.framework */; };
@@ -79,7 +78,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */,
-				F45F3BD91E02DFF40009434E /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
