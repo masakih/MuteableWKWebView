@@ -12,7 +12,7 @@
 #include <objc/runtime.h>
 
 /**
- Get WebPageProxy instance from class object of WKWebView and instance of WKWebView.
+ Get WebPageProxy instance from instance of WKWebView.
  WebPageProxy class is C++ class.
  
  @param instance instance of WKWebView.
