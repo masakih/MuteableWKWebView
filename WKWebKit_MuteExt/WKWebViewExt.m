@@ -16,7 +16,7 @@
 #import "SymbolSearch.h"
 
 
-typedef void (*SetMuteFunc)(void*, NSInteger);
+typedef void (*SetMuteFunc)(void*, _WKMediaMutedState);
 
 static const char *mutekey = "HMMuteKey";
 static NSString *sSymbolName = nil;
