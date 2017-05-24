@@ -25,7 +25,6 @@ NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
     
     NSMutableArray<NSTask *> *taskStack = [NSMutableArray array];
     NSPipe *pipe = nmPipe;
-    NSTask *lastTask = nil;
     for( NSString *hint in hints ) {
         NSTask *grepTask = [NSTask new];
         [taskStack addObject:grepTask];
@@ -37,11 +36,9 @@ NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
         pipe = [NSPipe pipe];
         grepTask.standardOutput = pipe;
         [grepTask launch];
-        
-        lastTask = grepTask;
     }
     
-    [lastTask waitUntilExit];
+    [taskStack.lastObject waitUntilExit];
     
     NSFileHandle *reading = pipe.fileHandleForReading;
     NSData *data = [reading readDataToEndOfFile];
