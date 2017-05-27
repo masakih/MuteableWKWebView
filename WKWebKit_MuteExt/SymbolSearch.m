@@ -47,11 +47,9 @@ NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
     NSArray *lines = [output componentsSeparatedByString:@"\n"];
     for( NSString *line in lines ) {
         NSArray *cols = [line componentsSeparatedByString:@" "];
-        if( cols.count != 0 ) {
-            NSString *name = cols[cols.count - 1];
-            if( name.length != 0 ) {
-                return name;
-            }
+        NSString *name = cols.lastObject;
+        if( name.length != 0 ) {
+            return name;
         }
     }
     
