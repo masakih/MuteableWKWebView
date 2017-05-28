@@ -13,7 +13,7 @@
 #import "HTSymbolHook.h"
 #include "getPage.h"
 
-#import "SymbolSearch.h"
+#import "SearchSymbol.h"
 
 
 typedef void (*SetMuteFunc)(void*, _WKMediaMutedState);
@@ -32,7 +32,7 @@ NSString *symbolName() {
     isFirst = NO;
     
     NSArray<NSString *> *hints = @[@"WebPageProxy", @"setMuted"];
-    sSymbolName = symbolSearch(@"/System/Library/Frameworks/WebKit.framework/WebKit", hints);
+    sSymbolName = searchSymbol(@"/System/Library/Frameworks/WebKit.framework/WebKit", hints);
     return sSymbolName;
 }
 

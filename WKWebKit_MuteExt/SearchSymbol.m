@@ -1,5 +1,5 @@
 //
-//  SymbolSearch.m
+//  SearchSymbol.m
 //  TestSounds
 //
 //  Created by Hori,Masaki on 2017/05/21.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-#import "SymbolSearch.h"
+#import "SearchSymbol.h"
 
-NSString *symbolSearch(NSString* imagePath, NSArray<NSString *> *hints) {
+NSString *searchSymbol(NSString* imagePath, NSArray<NSString *> *hints) {
     
     NSDictionary<NSString *, NSString *> *env = @{@"LANG": @"C"};
     

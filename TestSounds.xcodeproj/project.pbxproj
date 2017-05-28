@@ -25,7 +25,7 @@
 		F48E7CDD1ED0037C00025B61 /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CD81ED0037C00025B61 /* Rakefile */; };
 		F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */; };
 		F48E7CF21ED1471D00025B61 /* getPage.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEC1ED1471D00025B61 /* getPage.c */; };
-		F48E7CF31ED1471D00025B61 /* SymbolSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */; };
+		F48E7CF31ED1471D00025B61 /* SearchSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */; };
 		F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +66,8 @@
 		F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSymbolHook.m; sourceTree = "<group>"; };
 		F48E7CEC1ED1471D00025B61 /* getPage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getPage.c; sourceTree = "<group>"; };
 		F48E7CED1ED1471D00025B61 /* getPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPage.h; sourceTree = "<group>"; };
-		F48E7CEE1ED1471D00025B61 /* SymbolSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymbolSearch.h; sourceTree = "<group>"; };
-		F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymbolSearch.m; sourceTree = "<group>"; };
+		F48E7CEE1ED1471D00025B61 /* SearchSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSymbol.h; sourceTree = "<group>"; };
+		F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSymbol.m; sourceTree = "<group>"; };
 		F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewExt.h; sourceTree = "<group>"; };
 		F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewExt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,8 +189,8 @@
 			children = (
 				F48E7CED1ED1471D00025B61 /* getPage.h */,
 				F48E7CEC1ED1471D00025B61 /* getPage.c */,
-				F48E7CEE1ED1471D00025B61 /* SymbolSearch.h */,
-				F48E7CEF1ED1471D00025B61 /* SymbolSearch.m */,
+				F48E7CEE1ED1471D00025B61 /* SearchSymbol.h */,
+				F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */,
 				F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */,
 				F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */,
 			);
@@ -277,7 +277,7 @@
 				F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */,
 				F48E7CF21ED1471D00025B61 /* getPage.c in Sources */,
 				F48E7CD21ED0036F00025B61 /* syn-att.c in Sources */,
-				F48E7CF31ED1471D00025B61 /* SymbolSearch.m in Sources */,
+				F48E7CF31ED1471D00025B61 /* SearchSymbol.m in Sources */,
 				F45F3BCB1E02DFA50009434E /* main.m in Sources */,
 				F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */,
 				F48E7CCF1ED0036F00025B61 /* decode.c in Sources */,
