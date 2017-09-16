@@ -5,7 +5,7 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/masakih/MuteableWKWebView)
 
 
-# WKWebKitMuteExt
+# MuteableWKWebView
 Mute per WKWebView like Safari.
 
 ----
@@ -20,7 +20,7 @@ Interface:
 @end
 ```
 
-WKWebKitMuteExt append mute property into WKWebView.
+MuteableWKWebView append mute property into WKWebView.
 
 Usage:
 ```objc
