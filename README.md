@@ -1,6 +1,6 @@
 
 [![Build Status](https://travis-ci.org/masakih/WKWebKitMuteExt.svg?branch=master)](https://travis-ci.org/masakih/WKWebKitMuteExt)
-[![License](https://img.shields.io/github/license/masakih/WKWebKitMuteExt.svg)](https://github.com/masakih/WKWebKitMuteExt/blob/develop/LICENSE)
+[![License](https://img.shields.io/github/license/masakih/WKWebKitMuteExt.svg)](https://github.com/masakih/WKWebKitMuteExt/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/masakih/WKWebKitMuteExt.svg)](https://github.com/masakih/WKWebKitMuteExt/releases/latest)
 
 # WKWebKitMuteExt
