@@ -75,7 +75,7 @@
 
 - (void)setMute:(BOOL)mute
 {
-    self.webView.isMuted = mute;
+    self.webView.muted = mute;
 }
 - (BOOL)mute {
     return self.webView.isMuted;

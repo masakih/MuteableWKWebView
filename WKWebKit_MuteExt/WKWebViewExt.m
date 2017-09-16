@@ -40,7 +40,7 @@ static SetMuteFunc sMuteFunc = NULL;
     return self.mute != _WKMediaNoneMuted;
 }
 
-- (void)muted:(BOOL)isMuted {
+- (void)setMuted:(BOOL)isMuted {
     
     self.mute = isMuted ? _WKMediaAudioMuted : _WKMediaNoneMuted;
 }
