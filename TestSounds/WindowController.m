@@ -8,7 +8,7 @@
 
 #import "WindowController.h"
 
-#import "WKWebViewExt.h"
+#import <MuteableWKWebView/MuteableWKWebView.h>
 
 @interface WindowController ()
 @property BOOL mute;

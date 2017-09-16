@@ -1,6 +1,6 @@
 //
 //  getPage.h
-//  TestSounds
+//  MuteableWKWebView
 //
 //  Created by Hori,Masaki on 2017/05/20.
 //  Copyright © 2017年 Hori,Masaki. All rights reserved.

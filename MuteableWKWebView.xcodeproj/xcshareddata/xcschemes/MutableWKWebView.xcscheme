@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F45F3BC21E02DFA50009434E"
-               BuildableName = "TestSounds.app"
-               BlueprintName = "TestSounds"
-               ReferencedContainer = "container:TestSounds.xcodeproj">
+               BlueprintIdentifier = "F4AAA1251F6D4CDF00975E87"
+               BuildableName = "MuteableWKWebView.framework"
+               BlueprintName = "MuteableWKWebView"
+               ReferencedContainer = "container:MuteableWKWebView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F45F3BC21E02DFA50009434E"
-            BuildableName = "TestSounds.app"
-            BlueprintName = "TestSounds"
-            ReferencedContainer = "container:TestSounds.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -51,16 +42,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F45F3BC21E02DFA50009434E"
-            BuildableName = "TestSounds.app"
-            BlueprintName = "TestSounds"
-            ReferencedContainer = "container:TestSounds.xcodeproj">
+            BlueprintIdentifier = "F4AAA1251F6D4CDF00975E87"
+            BuildableName = "MuteableWKWebView.framework"
+            BlueprintName = "MuteableWKWebView"
+            ReferencedContainer = "container:MuteableWKWebView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -70,16 +60,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F45F3BC21E02DFA50009434E"
-            BuildableName = "TestSounds.app"
-            BlueprintName = "TestSounds"
-            ReferencedContainer = "container:TestSounds.xcodeproj">
+            BlueprintIdentifier = "F4AAA1251F6D4CDF00975E87"
+            BuildableName = "MuteableWKWebView.framework"
+            BlueprintName = "MuteableWKWebView"
+            ReferencedContainer = "container:MuteableWKWebView.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

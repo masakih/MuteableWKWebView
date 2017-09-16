@@ -11,23 +11,52 @@
 		F45F3BCB1E02DFA50009434E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F45F3BCA1E02DFA50009434E /* main.m */; };
 		F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCC1E02DFA50009434E /* Assets.xcassets */; };
 		F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45F3BCE1E02DFA50009434E /* MainMenu.xib */; };
-		F48E7CA91ECB4E6700025B61 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CA71ECB4E6700025B61 /* WindowController.m */; };
 		F48E7CAA1ECB4E6700025B61 /* WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CA81ECB4E6700025B61 /* WindowController.xib */; };
 		F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48E7CAB1ECB57DD00025B61 /* WebKit.framework */; };
-		F48E7CCF1ED0036F00025B61 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC11ED0036F00025B61 /* decode.c */; };
-		F48E7CD01ED0036F00025B61 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC41ED0036F00025B61 /* input.c */; };
-		F48E7CD11ED0036F00025B61 /* itab.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC61ED0036F00025B61 /* itab.c */; };
-		F48E7CD21ED0036F00025B61 /* syn-att.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC81ED0036F00025B61 /* syn-att.c */; };
-		F48E7CD31ED0036F00025B61 /* syn-intel.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC91ED0036F00025B61 /* syn-intel.c */; };
-		F48E7CD41ED0036F00025B61 /* syn.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCA1ED0036F00025B61 /* syn.c */; };
-		F48E7CD51ED0036F00025B61 /* udis86.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCE1ED0036F00025B61 /* udis86.c */; };
-		F48E7CDC1ED0037C00025B61 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CD61ED0037C00025B61 /* mach_override.c */; };
-		F48E7CDD1ED0037C00025B61 /* Rakefile in Resources */ = {isa = PBXBuildFile; fileRef = F48E7CD81ED0037C00025B61 /* Rakefile */; };
-		F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */; };
-		F48E7CF21ED1471D00025B61 /* getPage.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEC1ED1471D00025B61 /* getPage.c */; };
-		F48E7CF31ED1471D00025B61 /* SearchSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */; };
-		F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */; };
+		F4AAA1321F6D4D7800975E87 /* HTSymbolHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */; };
+		F4AAA1331F6D4D7B00975E87 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CD61ED0037C00025B61 /* mach_override.c */; };
+		F4AAA1341F6D4D7F00975E87 /* test_mach_override.cp in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CDA1ED0037C00025B61 /* test_mach_override.cp */; };
+		F4AAA1351F6D4D8400975E87 /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC11ED0036F00025B61 /* decode.c */; };
+		F4AAA1361F6D4D8700975E87 /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC41ED0036F00025B61 /* input.c */; };
+		F4AAA1371F6D4D8A00975E87 /* itab.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC61ED0036F00025B61 /* itab.c */; };
+		F4AAA1381F6D4D8C00975E87 /* syn-att.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC81ED0036F00025B61 /* syn-att.c */; };
+		F4AAA1391F6D4D8F00975E87 /* syn-intel.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CC91ED0036F00025B61 /* syn-intel.c */; };
+		F4AAA13A1F6D4D9300975E87 /* syn.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCA1ED0036F00025B61 /* syn.c */; };
+		F4AAA13B1F6D4D9500975E87 /* udis86.c in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CCE1ED0036F00025B61 /* udis86.c */; };
+		F4AAA13C1F6D4E3300975E87 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F48E7CAB1ECB57DD00025B61 /* WebKit.framework */; };
+		F4AAA13D1F6D4E6500975E87 /* MuteableWKWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4AAA1261F6D4CDF00975E87 /* MuteableWKWebView.framework */; };
+		F4AAA13E1F6D4E6500975E87 /* MuteableWKWebView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4AAA1261F6D4CDF00975E87 /* MuteableWKWebView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4AAA1421F6D4EEB00975E87 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48E7CA71ECB4E6700025B61 /* WindowController.m */; };
+		F4AAA14B1F6D52D000975E87 /* getPage.c in Sources */ = {isa = PBXBuildFile; fileRef = F4AAA1441F6D52D000975E87 /* getPage.c */; };
+		F4AAA14C1F6D52D000975E87 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F4AAA1461F6D52D000975E87 /* Info.plist */; };
+		F4AAA14D1F6D52D000975E87 /* MuteableWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */; };
+		F4AAA14E1F6D52D000975E87 /* SearchSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */; };
+		F4AAA14F1F6D530D00975E87 /* MuteableWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AAA1471F6D52D000975E87 /* MuteableWKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4AAA13F1F6D4E6500975E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F45F3BBB1E02DFA50009434E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4AAA1251F6D4CDF00975E87;
+			remoteInfo = MutableWKWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4AAA1411F6D4E6500975E87 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4AAA13E1F6D4E6500975E87 /* MuteableWKWebView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F45F3BC31E02DFA50009434E /* TestSounds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSounds.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,7 +66,6 @@
 		F45F3BCC1E02DFA50009434E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F45F3BCF1E02DFA50009434E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		F45F3BD11E02DFA50009434E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F45F3BD81E02DFF40009434E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F48E7CA61ECB4E6700025B61 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
 		F48E7CA71ECB4E6700025B61 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 		F48E7CA81ECB4E6700025B61 /* WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WindowController.xib; sourceTree = "<group>"; };
@@ -64,12 +92,14 @@
 		F48E7CDB1ED0037C00025B61 /* udis86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udis86.h; sourceTree = "<group>"; };
 		F48E7CE01ED0038A00025B61 /* HTSymbolHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSymbolHook.h; sourceTree = "<group>"; };
 		F48E7CE11ED0038A00025B61 /* HTSymbolHook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSymbolHook.m; sourceTree = "<group>"; };
-		F48E7CEC1ED1471D00025B61 /* getPage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getPage.c; sourceTree = "<group>"; };
-		F48E7CED1ED1471D00025B61 /* getPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPage.h; sourceTree = "<group>"; };
-		F48E7CEE1ED1471D00025B61 /* SearchSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchSymbol.h; sourceTree = "<group>"; };
-		F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchSymbol.m; sourceTree = "<group>"; };
-		F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WKWebViewExt.h; sourceTree = "<group>"; };
-		F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WKWebViewExt.m; sourceTree = "<group>"; };
+		F4AAA1261F6D4CDF00975E87 /* MuteableWKWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MuteableWKWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4AAA1441F6D52D000975E87 /* getPage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = getPage.c; path = MuteableWKWebView/getPage.c; sourceTree = SOURCE_ROOT; };
+		F4AAA1451F6D52D000975E87 /* getPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = getPage.h; path = MuteableWKWebView/getPage.h; sourceTree = SOURCE_ROOT; };
+		F4AAA1461F6D52D000975E87 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MuteableWKWebView/Info.plist; sourceTree = SOURCE_ROOT; };
+		F4AAA1471F6D52D000975E87 /* MuteableWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MuteableWKWebView.h; path = MuteableWKWebView/MuteableWKWebView.h; sourceTree = SOURCE_ROOT; };
+		F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MuteableWKWebView.m; path = MuteableWKWebView/MuteableWKWebView.m; sourceTree = SOURCE_ROOT; };
+		F4AAA1491F6D52D000975E87 /* SearchSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchSymbol.h; path = MuteableWKWebView/SearchSymbol.h; sourceTree = SOURCE_ROOT; };
+		F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchSymbol.m; path = MuteableWKWebView/SearchSymbol.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +108,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F48E7CAC1ECB57DD00025B61 /* WebKit.framework in Frameworks */,
+				F4AAA13D1F6D4E6500975E87 /* MuteableWKWebView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AAA1221F6D4CDF00975E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AAA13C1F6D4E3300975E87 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +126,7 @@
 		F45F3BBA1E02DFA50009434E = {
 			isa = PBXGroup;
 			children = (
-				F48E7CE61ED12A9A00025B61 /* WKWebView_MuteExt */,
+				F4AAA1271F6D4CDF00975E87 /* MuteableWKWebView */,
 				F48E7CBE1ED0033700025B61 /* HTSymbolHook */,
 				F45F3BC51E02DFA50009434E /* Test */,
 				F45F3BC41E02DFA50009434E /* Products */,
@@ -99,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				F45F3BC31E02DFA50009434E /* TestSounds.app */,
+				F4AAA1261F6D4CDF00975E87 /* MuteableWKWebView.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,7 +172,6 @@
 			isa = PBXGroup;
 			children = (
 				F48E7CAB1ECB57DD00025B61 /* WebKit.framework */,
-				F45F3BD81E02DFF40009434E /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,21 +223,33 @@
 			path = libudis86;
 			sourceTree = "<group>";
 		};
-		F48E7CE61ED12A9A00025B61 /* WKWebView_MuteExt */ = {
+		F4AAA1271F6D4CDF00975E87 /* MuteableWKWebView */ = {
 			isa = PBXGroup;
 			children = (
-				F48E7CED1ED1471D00025B61 /* getPage.h */,
-				F48E7CEC1ED1471D00025B61 /* getPage.c */,
-				F48E7CEE1ED1471D00025B61 /* SearchSymbol.h */,
-				F48E7CEF1ED1471D00025B61 /* SearchSymbol.m */,
-				F48E7CF01ED1471D00025B61 /* WKWebViewExt.h */,
-				F48E7CF11ED1471D00025B61 /* WKWebViewExt.m */,
+				F4AAA1441F6D52D000975E87 /* getPage.c */,
+				F4AAA1451F6D52D000975E87 /* getPage.h */,
+				F4AAA1471F6D52D000975E87 /* MuteableWKWebView.h */,
+				F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */,
+				F4AAA1491F6D52D000975E87 /* SearchSymbol.h */,
+				F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */,
+				F4AAA1461F6D52D000975E87 /* Info.plist */,
 			);
-			name = WKWebView_MuteExt;
-			path = WKWebKit_MuteExt;
+			name = MuteableWKWebView;
+			path = MutableWKWebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4AAA1231F6D4CDF00975E87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AAA14F1F6D530D00975E87 /* MuteableWKWebView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		F45F3BC21E02DFA50009434E /* TestSounds */ = {
@@ -208,15 +259,35 @@
 				F45F3BBF1E02DFA50009434E /* Sources */,
 				F45F3BC01E02DFA50009434E /* Frameworks */,
 				F45F3BC11E02DFA50009434E /* Resources */,
+				F4AAA1411F6D4E6500975E87 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4AAA1401F6D4E6500975E87 /* PBXTargetDependency */,
 			);
 			name = TestSounds;
 			productName = TestSounds;
 			productReference = F45F3BC31E02DFA50009434E /* TestSounds.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F4AAA1251F6D4CDF00975E87 /* MuteableWKWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4AAA12D1F6D4CDF00975E87 /* Build configuration list for PBXNativeTarget "MuteableWKWebView" */;
+			buildPhases = (
+				F4AAA1211F6D4CDF00975E87 /* Sources */,
+				F4AAA1221F6D4CDF00975E87 /* Frameworks */,
+				F4AAA1231F6D4CDF00975E87 /* Headers */,
+				F4AAA1241F6D4CDF00975E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MuteableWKWebView;
+			productName = MutableWKWebView;
+			productReference = F4AAA1261F6D4CDF00975E87 /* MuteableWKWebView.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -231,9 +302,13 @@
 						CreatedOnToolsVersion = 8.2;
 						ProvisioningStyle = Automatic;
 					};
+					F4AAA1251F6D4CDF00975E87 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
-			buildConfigurationList = F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "TestSounds" */;
+			buildConfigurationList = F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "MuteableWKWebView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,6 +322,7 @@
 			projectRoot = "";
 			targets = (
 				F45F3BC21E02DFA50009434E /* TestSounds */,
+				F4AAA1251F6D4CDF00975E87 /* MuteableWKWebView */,
 			);
 		};
 /* End PBXProject section */
@@ -256,10 +332,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48E7CDD1ED0037C00025B61 /* Rakefile in Resources */,
+				F4AAA14C1F6D52D000975E87 /* Info.plist in Resources */,
 				F48E7CAA1ECB4E6700025B61 /* WindowController.xib in Resources */,
 				F45F3BCD1E02DFA50009434E /* Assets.xcassets in Resources */,
 				F45F3BD01E02DFA50009434E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AAA1241F6D4CDF00975E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,25 +353,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F48E7CD41ED0036F00025B61 /* syn.c in Sources */,
-				F48E7CD51ED0036F00025B61 /* udis86.c in Sources */,
-				F48E7CDC1ED0037C00025B61 /* mach_override.c in Sources */,
-				F48E7CD01ED0036F00025B61 /* input.c in Sources */,
-				F48E7CE21ED0038A00025B61 /* HTSymbolHook.m in Sources */,
-				F48E7CF21ED1471D00025B61 /* getPage.c in Sources */,
-				F48E7CD21ED0036F00025B61 /* syn-att.c in Sources */,
-				F48E7CF31ED1471D00025B61 /* SearchSymbol.m in Sources */,
 				F45F3BCB1E02DFA50009434E /* main.m in Sources */,
-				F48E7CF41ED1471D00025B61 /* WKWebViewExt.m in Sources */,
-				F48E7CCF1ED0036F00025B61 /* decode.c in Sources */,
-				F48E7CA91ECB4E6700025B61 /* WindowController.m in Sources */,
-				F48E7CD11ED0036F00025B61 /* itab.c in Sources */,
-				F48E7CD31ED0036F00025B61 /* syn-intel.c in Sources */,
+				F4AAA14D1F6D52D000975E87 /* MuteableWKWebView.m in Sources */,
 				F45F3BC81E02DFA50009434E /* AppDelegate.m in Sources */,
+				F4AAA1421F6D4EEB00975E87 /* WindowController.m in Sources */,
+				F4AAA14B1F6D52D000975E87 /* getPage.c in Sources */,
+				F4AAA14E1F6D52D000975E87 /* SearchSymbol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4AAA1211F6D4CDF00975E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4AAA1321F6D4D7800975E87 /* HTSymbolHook.m in Sources */,
+				F4AAA1331F6D4D7B00975E87 /* mach_override.c in Sources */,
+				F4AAA1341F6D4D7F00975E87 /* test_mach_override.cp in Sources */,
+				F4AAA1351F6D4D8400975E87 /* decode.c in Sources */,
+				F4AAA1361F6D4D8700975E87 /* input.c in Sources */,
+				F4AAA1371F6D4D8A00975E87 /* itab.c in Sources */,
+				F4AAA1381F6D4D8C00975E87 /* syn-att.c in Sources */,
+				F4AAA1391F6D4D8F00975E87 /* syn-intel.c in Sources */,
+				F4AAA13A1F6D4D9300975E87 /* syn.c in Sources */,
+				F4AAA13B1F6D4D9500975E87 /* udis86.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4AAA1401F6D4E6500975E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4AAA1251F6D4CDF00975E87 /* MuteableWKWebView */;
+			targetProxy = F4AAA13F1F6D4E6500975E87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F45F3BCE1E02DFA50009434E /* MainMenu.xib */ = {
@@ -413,10 +512,63 @@
 			};
 			name = Release;
 		};
+		F4AAA12B1F6D4CDF00975E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MuteableWKWebView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MuteableWKWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F4AAA12C1F6D4CDF00975E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = MuteableWKWebView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.masakih.MuteableWKWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "TestSounds" */ = {
+		F45F3BBE1E02DFA50009434E /* Build configuration list for PBXProject "MuteableWKWebView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F45F3BD21E02DFA50009434E /* Debug */,
@@ -430,6 +582,15 @@
 			buildConfigurations = (
 				F45F3BD51E02DFA50009434E /* Debug */,
 				F45F3BD61E02DFA50009434E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4AAA12D1F6D4CDF00975E87 /* Build configuration list for PBXNativeTarget "MuteableWKWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4AAA12B1F6D4CDF00975E87 /* Debug */,
+				F4AAA12C1F6D4CDF00975E87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
