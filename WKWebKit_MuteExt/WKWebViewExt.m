@@ -15,6 +15,11 @@
 
 #import "SearchSymbol.h"
 
+typedef NS_OPTIONS(NSInteger, _WKMediaMutedState) {
+    _WKMediaNoneMuted = 0,
+    _WKMediaAudioMuted = 1 << 0,
+    _WKMediaCaptureDevicesMuted = 1 << 1,
+};
 
 typedef void (*SetMuteFunc)(void*, _WKMediaMutedState);
 
@@ -22,7 +27,23 @@ static const char *mutekey = "HMMuteKey";
 static NSString *sSymbolName = nil;
 static SetMuteFunc sMuteFunc = NULL;
 
+@interface WKWebView (HMMuteExtensionPrivate)
+
+@property _WKMediaMutedState mute;
+
+@end
+
 @implementation WKWebView (HMMuteExtension)
+
+- (BOOL)isMuted {
+    
+    return self.mute != _WKMediaNoneMuted;
+}
+
+- (void)muted:(BOOL)isMuted {
+    
+    self.mute = isMuted ? _WKMediaAudioMuted : _WKMediaNoneMuted;
+}
 
 NSString *symbolName() {
     if( sSymbolName ) return sSymbolName;

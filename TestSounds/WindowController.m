@@ -21,7 +21,6 @@
 @end
 
 @implementation WindowController
-@synthesize mute = _mute;
 
 + (instancetype)new
 {
@@ -76,15 +75,10 @@
 
 - (void)setMute:(BOOL)mute
 {
-    _mute = mute;
-    if(_mute) {
-        self.webView.mute = _WKMediaAudioMuted;
-    } else {
-        self.webView.mute = _WKMediaNoneMuted;
-    }
+    self.webView.isMuted = mute;
 }
 - (BOOL)mute {
-    return _mute;
+    return self.webView.isMuted;
 }
 
 + (NSSet<NSString *> *)keyPathsForValuesAffectingButtonLabel {
