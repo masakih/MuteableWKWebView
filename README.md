@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.org/masakih/WKWebKitMuteExt.svg?branch=master)](https://travis-ci.org/masakih/WKWebKitMuteExt)
 [![License](https://img.shields.io/github/license/masakih/WKWebKitMuteExt.svg)](https://github.com/masakih/WKWebKitMuteExt/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/masakih/WKWebKitMuteExt.svg)](https://github.com/masakih/WKWebKitMuteExt/releases/latest)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/masakih/MuteableWKWebView)
+
 
 # WKWebKitMuteExt
 Mute per WKWebView like Safari.
