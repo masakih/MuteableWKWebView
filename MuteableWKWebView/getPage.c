@@ -11,6 +11,7 @@
 #include <objc/runtime.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #if __has_feature(objc_arc)
 #error This file must be compiled without ARC
@@ -34,15 +35,14 @@ static bool checkPageProperty() {
     unsigned int c = 0;
     Ivar *ivarP = class_copyIvarList(classObj, &c);
     
-    if( !foundPageProperty ) {
-        for(int i = 0; i < c; i++) {
-            const char *ivarName = ivar_getName(ivarP[i]);
-            if( strncmp(pagePropertyName, ivarName, 5) == 0 ) {
-                foundPageProperty = true;
-                break;
-            }
+    for(int i = 0; i < c; i++) {
+        const char *ivarName = ivar_getName(ivarP[i]);
+        if( strncmp(pagePropertyName, ivarName, 5) == 0 ) {
+            foundPageProperty = true;
+            break;
         }
     }
+    free(ivarP);
     
     return foundPageProperty;
 }
