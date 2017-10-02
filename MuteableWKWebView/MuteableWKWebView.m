@@ -72,8 +72,7 @@ SetMuteFunc getSetMuteFunc() {
     return sMuteFunc;
 }
 
-- (void)setMute:(_WKMediaMutedState)mute
-{
+- (void)setMute:(_WKMediaMutedState)mute {
     void *ptr = getPage(self);
     
     SetMuteFunc setMute = getSetMuteFunc();
