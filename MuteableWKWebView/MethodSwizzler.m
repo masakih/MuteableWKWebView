@@ -19,9 +19,13 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         
-        if( ![WKWebView respondsToSelector:@selector(_setPageMuted:)] ) {
+        Class class = [WKWebView class];
+        SEL setPageMutedSelector = @selector(_setPageMuted:);
+        Method setPageMutedMethod = class_getInstanceMethod(class, setPageMutedSelector);
+        
+        if( setPageMutedMethod ) {
             
-            Class class = [WKWebView class];
+            NSLog(@"Method Swizzling");
             
             SEL originalSelector = @selector(setMute:);
             SEL swizzledSelector = @selector(NEW_HMMuteableWKWebView_setMute:);
