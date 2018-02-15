@@ -13,4 +13,3 @@
 @property (getter=isMuted) BOOL muted;
 
 @end
-

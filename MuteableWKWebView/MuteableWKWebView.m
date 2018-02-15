@@ -7,6 +7,7 @@
 //
 
 #import "MuteableWKWebView.h"
+#import "MuteableWKWebViewPrivate.h"
 
 #import <objc/runtime.h>
 
@@ -14,12 +15,6 @@
 #include "getPage.h"
 
 #import "SearchSymbol.h"
-
-typedef NS_OPTIONS(NSInteger, _WKMediaMutedState) {
-    _WKMediaNoneMuted = 0,
-    _WKMediaAudioMuted = 1 << 0,
-    _WKMediaCaptureDevicesMuted = 1 << 1,
-};
 
 typedef void (*SetMuteFunc)(void*, _WKMediaMutedState);
 
@@ -89,4 +84,15 @@ SetMuteFunc getSetMuteFunc() {
     return muteVal.integerValue;
 }
 
+@end
+
+/// this method use only WKWebView has _setPageMuted: method.
+/// _setPageMuted method available from macOS 10.13 and iOS 11.0.
+@implementation WKWebView (NewMethodHMMuteExtension)
+- (void)NEW_HMMuteableWKWebView_setMute:(_WKMediaMutedState)mute {
+    
+    objc_setAssociatedObject(self, mutekey, [NSNumber numberWithInteger:mute], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+    [self _setPageMuted:mute];
+}
 @end

@@ -32,6 +32,8 @@
 		F4AAA14D1F6D52D000975E87 /* MuteableWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */; };
 		F4AAA14E1F6D52D000975E87 /* SearchSymbol.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */; };
 		F4AAA14F1F6D530D00975E87 /* MuteableWKWebView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4AAA1471F6D52D000975E87 /* MuteableWKWebView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4EE51DD2035BF5700255E96 /* MethodSwizzler.h in Headers */ = {isa = PBXBuildFile; fileRef = F4EE51DB2035BF5700255E96 /* MethodSwizzler.h */; };
+		F4EE51DE2035BF5700255E96 /* MethodSwizzler.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EE51DC2035BF5700255E96 /* MethodSwizzler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,9 @@
 		F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MuteableWKWebView.m; path = MuteableWKWebView/MuteableWKWebView.m; sourceTree = SOURCE_ROOT; };
 		F4AAA1491F6D52D000975E87 /* SearchSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchSymbol.h; path = MuteableWKWebView/SearchSymbol.h; sourceTree = SOURCE_ROOT; };
 		F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchSymbol.m; path = MuteableWKWebView/SearchSymbol.m; sourceTree = SOURCE_ROOT; };
+		F4EE51DA2035BAB200255E96 /* MuteableWKWebViewPrivate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MuteableWKWebViewPrivate.h; sourceTree = "<group>"; };
+		F4EE51DB2035BF5700255E96 /* MethodSwizzler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MethodSwizzler.h; sourceTree = "<group>"; };
+		F4EE51DC2035BF5700255E96 /* MethodSwizzler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,15 +233,17 @@
 			children = (
 				F4AAA1441F6D52D000975E87 /* getPage.c */,
 				F4AAA1451F6D52D000975E87 /* getPage.h */,
+				F4EE51DA2035BAB200255E96 /* MuteableWKWebViewPrivate.h */,
 				F4AAA1471F6D52D000975E87 /* MuteableWKWebView.h */,
 				F4AAA1481F6D52D000975E87 /* MuteableWKWebView.m */,
+				F4EE51DB2035BF5700255E96 /* MethodSwizzler.h */,
+				F4EE51DC2035BF5700255E96 /* MethodSwizzler.m */,
 				F4AAA1491F6D52D000975E87 /* SearchSymbol.h */,
 				F4AAA14A1F6D52D000975E87 /* SearchSymbol.m */,
 				F4AAA1461F6D52D000975E87 /* Info.plist */,
 			);
-			name = MuteableWKWebView;
-			path = MutableWKWebView;
-			sourceTree = "<group>";
+			path = MuteableWKWebView;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -246,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4AAA14F1F6D530D00975E87 /* MuteableWKWebView.h in Headers */,
+				F4EE51DD2035BF5700255E96 /* MethodSwizzler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +303,7 @@
 		F45F3BBB1E02DFA50009434E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Hori,Masaki";
 				TargetAttributes = {
 					F45F3BC21E02DFA50009434E = {
@@ -372,6 +380,7 @@
 				F4AAA1351F6D4D8400975E87 /* decode.c in Sources */,
 				F4AAA1361F6D4D8700975E87 /* input.c in Sources */,
 				F4AAA1371F6D4D8A00975E87 /* itab.c in Sources */,
+				F4EE51DE2035BF5700255E96 /* MethodSwizzler.m in Sources */,
 				F4AAA1381F6D4D8C00975E87 /* syn-att.c in Sources */,
 				F4AAA1391F6D4D8F00975E87 /* syn-intel.c in Sources */,
 				F4AAA13A1F6D4D9300975E87 /* syn.c in Sources */,
@@ -410,7 +419,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -418,7 +429,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -457,7 +472,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -465,7 +482,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
