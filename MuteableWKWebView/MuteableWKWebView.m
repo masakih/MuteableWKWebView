@@ -77,8 +77,6 @@ SetMuteFunc getSetMuteFunc() {
     }
     setMute(ptr, mute);
     
-    NSLog(@"setMute");
-    
     objc_setAssociatedObject(self, mutekey, [NSNumber numberWithInteger:mute], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 - (_WKMediaMutedState)mute {
@@ -95,7 +93,6 @@ SetMuteFunc getSetMuteFunc() {
     
     objc_setAssociatedObject(self, mutekey, [NSNumber numberWithInteger:mute], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
-    NSLog(@"NEW_HMMuteableWKWebView_setMute");
     [self _setPageMuted:mute];
 }
 @end

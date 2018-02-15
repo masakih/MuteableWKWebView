@@ -25,8 +25,6 @@
         
         if( setPageMutedMethod ) {
             
-            NSLog(@"Method Swizzling");
-            
             SEL originalSelector = @selector(setMute:);
             SEL swizzledSelector = @selector(NEW_HMMuteableWKWebView_setMute:);
             
